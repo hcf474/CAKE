@@ -187,7 +187,7 @@ function checkoutWhatsApp(total) {
     const mensajeCodificado = encodeURIComponent(mensaje);
     
     // Reemplaza con tu número telefónico real (incluyendo código de país sin el signo '+')
-    const numeroTelefono = "521234567890"; 
+    const numeroTelefono = "529531235197"; 
     const urlWhatsApp = `https://api.whatsapp.com/send?phone=${numeroTelefono}&text=${mensajeCodificado}`;
 
     window.open(urlWhatsApp, '_blank');

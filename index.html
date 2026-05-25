@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Pastelería de todos los Ángeles</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+            margin-top: 2rem;
+        }
+        @media (max-width: 768px) {
+            .hero { grid-template-columns: 1fr; }
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Relación 16:9 */
+            height: 0;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--sombra);
+        }
+        .video-container iframe, .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .lema-banner {
+            background-color: #fdf2f4;
+            border-left: 5px solid var(--color-acento);
+            padding: 1.5rem;
+            margin-top: 2rem;
+            text-align: center;
+            font-family: var(--fuente-elegante);
+            font-size: 1.3rem;
+            font-style: italic;
+            color: var(--color-principal);
+            border-radius: 0 15px 15px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Pastelería de todos los Ángeles</h1>
+        <nav>
+            <a href="index.html" class="active">Inicio</a>
+            <a href="menu.html">Menú</a>
+            <a href="personalizado.html">Pedidos Personalizados</a>
+            <a href="carrito.html">Carrito</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Bienvenidos a Nuestro Rincón Celestial</h2>
+        
+        <div class="hero">
+            <div class="historia-texto">
+                <p>Nuestra historia comenzó hace más de tres décadas en una pequeña cocina familiar, con una receta secreta de bizcocho de vainilla y el sueño de endulzar los momentos más importantes de las personas. En <strong>Pastelería de todos los Ángeles</strong>, creemos que la pastelería fina no solo alimenta, sino que crea recuerdos inolvidables.</p>
+                <br>
+                <p>Cada uno de nuestros productos está elaborado de manera artesanal, utilizando ingredientes selectos, frutas frescas de temporada y decorados con una dedicación meticulosa. Para nosotros, cada pastel es una obra de arte dedicada a celebrar la vida.</p>
+            </div>
+            
+            <div>
+                <div class="video-container">
+                    <video controls poster="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=600">
+                        <source src="ruta_a_tu_video.mp4" type="video/mp4">
+                        Tu navegador no soporta videos HTML5.
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="lema-banner">
+            "Ya sea una reunión familiar pequeña, unos XV años o una boda, siempre te acompañamos."
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Pastelería de todos los Ángeles. Hecho con amor.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

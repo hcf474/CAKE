@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizado - Pastelería de todos los Ángeles</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Pastelería de todos los Ángeles</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="menu.html">Menú</a>
+            <a href="personalizado.html" class="active">Pedidos Personalizados</a>
+            <a href="carrito.html">Carrito</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Diseña tu Pastel Ideal</h2>
+        
+        <div class="form-box">
+    <div style="background-color: #fff3cd; border-left: 5px solid #ffc107; color: #856404; padding: 1rem; margin-bottom: 1.5rem; border-radius: 4px; font-size: 0.9rem; font-weight: 500;">
+        ⚠️ <strong>Nota importante:</strong> Los precios mostrados a continuación son <strong>bases estimadas</strong>. Se podrán aplicar cargos extras en el total dependiendo de la complejidad del decorado o la disponibilidad de los materiales e ingredientes seleccionados.
+    </div>
+
+    <form id="form-personalizado">
+        <div class="form-group">
+            <label for="tamano">1. Selecciona el Tamaño (Precio Base):</label>
+            <select id="tamano" class="form-control" required>
+                <option value="Chico (10 personas) - $300">Chico (10-12 personas) - $300.00 base</option>
+                <option value="Mediano (20 personas) - $500" selected>Mediano (20-25 personas) - $500.00 base</option>
+                <option value="Grande (30 personas) - $700">Grande (30-35 personas) - $700.00 base</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="pan">2. Sabor del Bizcocho/Pan:</label>
+            <select id="pan" class="form-control" required>
+                <option value="Vainilla">Vainilla Tradicional</option>
+                <option value="Chocolate">Chocolate Intenso</option>
+                <option value="Red Velvet">Red Velvet</option>
+                <option value="Zanahoria">Zanahoria Especiada</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="relleno">3. Sabor del Relleno:</label>
+            <select id="relleno" class="form-control" required>
+                <option value="Crema Pastelera">Crema Pastelera</option>
+                <option value="Ganache de Chocolate">Ganache de Chocolate</option>
+                <option value="Mermelada de Fresa">Mermelada de Fresa Natural</option>
+                <option value="Queso Cream">Crema de Queso Suave</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="cobertura">4. Cubierta Externa / Decorado:</label>
+            <select id="cobertura" class="form-control" required>
+                <option value="Chantilly">Chantilly Ligero</option>
+                <option value="Buttercream">Buttercream Americano</option>
+                <option value="Fondant">Fondant Moldeado Artístico</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="detalles">Notas o Leyenda del Pastel (Opcional):</label>
+            <textarea id="detalles" class="form-control" rows="3" placeholder="Ej. Escribir 'Feliz Cumpleaños Mamá' en letras doradas..."></textarea>
+        </div>
+
+        <button type="submit" class="btn" style="width: 100%;">Agregar Pedido (Precio Base Estimado)</button>
+    </form>
+</div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Pastelería de todos los Ángeles. Hecho con amor.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

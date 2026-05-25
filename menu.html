@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Pastelería de todos los Ángeles</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Pastelería de todos los Ángeles</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="menu.html" class="active">Menú</a>
+            <a href="personalizado.html">Pedidos Personalizados</a>
+            <a href="carrito.html">Carrito</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Nuestro Menú Tradicional</h2>
+        
+        <div class="grid-productos">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1616541823729-00fe0aacd32c?q=80&w=400" alt="Red Velvet">
+                <div class="card-info">
+                    <h3>Pastel Red Velvet</h3>
+                    <p>Bizcocho de terciopelo rojo con un toque sutil de cocoa, relleno y cubierto de nuestro cremoso betún de queso crema premium.</p>
+                    <div class="precio">$450.00</div>
+                    <button class="btn" onclick="agregarDelMenu('Pastel Red Velvet', 450.00)">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=400" alt="Tres Leches">
+                <div class="card-info">
+                    <h3>Clásico Tres Leches</h3>
+                    <p>Tradicional pan de vainilla empapado en nuestra mezcla secreta de tres leches, relleno de duraznos y crema batida ligera.</p>
+                    <div class="precio">$380.00</div>
+                    <button class="btn" onclick="agregarDelMenu('Clásico Tres Leches', 380.00)">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=400" alt="Chocolate Fudge">
+                <div class="card-info">
+                    <h3>Chocolate Fudge Supremo</h3>
+                    <p>Para los amantes del chocolate intenso: bizcocho húmedo de chocolate relleno de fudge artesanal y cobertura de ganache.</p>
+                    <div class="precio">$480.00</div>
+                    <button class="btn" onclick="agregarDelMenu('Chocolate Fudge Supremo', 480.00)">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?q=80&w=400" alt="Cheesecake Fresa">
+                <div class="card-info">
+                    <h3>Cheesecake de Fresa</h3>
+                    <p>Base crocante de galleta María con un relleno horneado ultra cremosa de queso, coronado con una mermelada densa de fresas naturales.</p>
+                    <div class="precio">$420.00</div>
+                    <button class="btn" onclick="agregarDelMenu('Cheesecake de Fresa', 420.00)">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1622896784083-cc051313dbab?q=80&w=400" alt="Carrot Cake">
+                <div class="card-info">
+                    <h3>Carrot Cake Especiado</h3>
+                    <p>Bizcocho rústico de zanahoria con nueces trituradas y toques de canela, cubierto con una suave capa de betún de queso.</p>
+                    <div class="precio">$400.00</div>
+                    <button class="btn" onclick="agregarDelMenu('Carrot Cake Especiado', 400.00)">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Pastelería de todos los Ángeles. Hecho con amor.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

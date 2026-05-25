@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Carrito - Pastelería de todos los Ángeles</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .carrito-vacio-msg {
+            text-align: center;
+            padding: 3rem;
+            font-size: 1.2rem;
+            color: #88726e;
+        }
+        .acciones-carrito {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Pastelería de todos los Ángeles</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="menu.html">Menú</a>
+            <a href="personalizado.html">Pedidos Personalizados</a>
+            <a href="carrito.html" class="active">Carrito</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Tu Carrito de Compras</h2>
+        
+        <div id="contenedor-carrito">
+            </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Pastelería de todos los Ángeles. Hecho con amor.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Ejecutar renderizado exclusivo de esta interfaz al cargar la página
+        document.addEventListener('DOMContentLoaded', renderizarInterfazCarrito);
+    </script>
+</body>
+</html>
